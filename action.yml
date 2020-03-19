@@ -5,11 +5,11 @@ inputs:
     description: 'The path to a notes template file in this repository'
     required: true
     default: 'notes/weekly-sync/template.md'
-  project_column_id:
+  project-column-id:
     description: 'The ID of the Project Column from which to pull issues'
     required: true
 outputs:
-  pull_request_url: # id of output
+  pull-request-url: # id of output
     description: 'The URL for the meeting notes Pull Request'
 runs:
   using: 'node12'
