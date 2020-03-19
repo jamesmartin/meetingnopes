@@ -1,0 +1,16 @@
+name: 'Meeting Nopes'
+description: 'Less copy pasta, more focus on the meeting!'
+inputs:
+  template:  # id of input
+    description: 'The path to a notes template file in this repository'
+    required: true
+    default: 'notes/weekly-sync/template.md'
+  project_column_id:
+    description: 'The ID of the Project Column from which to pull issues'
+    required: true
+outputs:
+  pull_request_url: # id of output
+    description: 'The URL for the meeting notes Pull Request'
+runs:
+  using: 'node12'
+  main: 'index.js'
