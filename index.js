@@ -11,7 +11,7 @@ try {
   const octokit = new github.GitHub(githubToken)
 
   // 1. Get template
-  gt.getTemplate(githubToken, owner, repo, template).then((data) => {
+  gt.getTemplate(octokit, owner, repo, template).then((data) => {
     console.log(templateContents)
   })
 
