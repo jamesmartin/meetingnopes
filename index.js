@@ -8,7 +8,7 @@ try {
 
   console.log('Template: ' + template)
   console.log('Project Column ID: ' + projectColumnId)
-  console.log('Personal Access Token (last 5): ' + personalAccessToken.slice(personalAccessToken.length - 5))
+  console.log('Personal Access Token (last 8): ' + personalAccessToken.slice(personalAccessToken.length - 8))
 } catch (error) {
   core.setFailed(error.message);
 }
