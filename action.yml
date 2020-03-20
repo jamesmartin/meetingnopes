@@ -8,6 +8,9 @@ inputs:
   project-column-id:
     description: 'The ID of the Project Column from which to pull issues'
     required: true
+  personal-access-token:
+    description: 'A Personal Access Token that can access Projects'
+    required: true
 outputs:
   pull-request-url: # id of output
     description: 'The URL for the meeting notes Pull Request'
