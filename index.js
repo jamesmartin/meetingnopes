@@ -1,4 +1,4 @@
-const gt = require('./getTemplate.js')
+const things = require('./apiThings.js')
 const core = require('@actions/core');
 const github = require('@actions/github');
 
