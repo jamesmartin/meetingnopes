@@ -12,7 +12,7 @@ try {
 
   // 1. Get template
   gt.getTemplate(octokit, owner, repo, template).then((data) => {
-    console.log(templateContents)
+    console.log(data)
   })
 
   // 2. Get project card content URLs and descriptions
