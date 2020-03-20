@@ -11,6 +11,9 @@ inputs:
   personal-access-token:
     description: 'A Personal Access Token that can access Projects'
     required: true
+  github-token:
+    description: 'The secrets.GITHUB_TOKEN for this Workflow'
+    required: true
 outputs:
   pull-request-url: # id of output
     description: 'The URL for the meeting notes Pull Request'
