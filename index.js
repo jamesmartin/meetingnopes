@@ -3,6 +3,9 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const Mustache = require('mustache')
 
+// Disable HTML-escaping because we're rendering Markdown
+Mustache.escape = function(text) { return text }
+
 try {
   const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/')
   const template = core.getInput('template')
@@ -23,6 +26,7 @@ try {
         date: (new Date()).toDateString(),
         cards: cards
       }
+
       const rendered = Mustache.render(template, view)
       console.log(rendered)
     })
