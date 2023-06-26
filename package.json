@@ -19,7 +19,7 @@
   "homepage": "https://github.com/jamesmartin/meetingnopes#readme",
   "dependencies": {
     "@actions/core": "^1.9.1",
-    "@actions/github": "^2.1.1",
+    "@actions/github": "^5.1.1",
     "mustache": "^4.0.1"
   }
 }
